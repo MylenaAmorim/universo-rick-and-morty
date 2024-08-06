@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'universo-rick-and-morty';
+  showFiller = false;
+
+  constructor() {}
+  
 }

@@ -1,0 +1,8 @@
+div {
+    display: inline-block;
+}
+
+mat-sidenav-container {
+    position: static !important;
+    display: block  !important;
+}

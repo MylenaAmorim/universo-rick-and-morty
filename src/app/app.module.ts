@@ -10,7 +10,12 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatInputModule } from "@angular/material/input";
 import { MatCardModule } from "@angular/material/card";
 import { HttpClientModule } from '@angular/common/http';
-// import { HttpModule } from '@angular/http';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from "@angular/material/tooltip";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MaterialModule } from './global/material';
 
 @NgModule({
   declarations: [
@@ -22,10 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     CharactersModule,
-    MatSelectModule,
-    MatInputModule,
-    MatCardModule,
     HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

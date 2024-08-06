@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { MaterialModule } from 'src/app/global/material';
 
 const routes: Routes = [
   {path: '', component: CharactersComponent},
@@ -22,14 +23,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     RouterModule,
-    MatSelectModule,
-    MatInputModule,
-    MatCardModule,
     FormsModule,
     ReactiveFormsModule,
-    MatPaginatorModule,
-    MatButtonModule,
-    MatIconModule
+    MaterialModule
   ]
 })
 export class CharactersModule {

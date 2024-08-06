@@ -1,18 +1,15 @@
 <div class="container">
     <div class="header">
-        <div class="sub-header">
-            <img class="img-title header-img" src="assets/images/title-rick.png" alt="" srcset="">
-
-            <div class="title">
-                <p class="title-universe">UNIVERSO</p>
-                <p class="title-rick-morty">RICK AND MORTY</p>
-            </div>
+        <img class="img-title header-img" src="assets/images/title-rick.png" alt="" srcset="">
+        <div class="title">
+            <p class="title-universe">UNIVERSO</p>
+            <p class="title-rick-morty">RICK AND MORTY</p>
         </div>
     </div>
 </div>
 
-<div class="container" id="container">    
-    <div id="search">
+<div>
+    <div>
         <div class="text-navigate">
             <p>Navegue entre os universos</p>
         </div>
@@ -20,27 +17,43 @@
             <div class="container">
                 <div class="row d-flex">
                     <div class="col-sm">
-                        Personagens
+                        <a href="/personagens">Personagens</a>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm disabled">
                         Episódios
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm disabled">
                         Locais
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm disabled">
                         Favoritos
                     </div>
                 </div>
             </div>
         </div>
-    
-        <div class="container" style="display: flex;">
+
+        <!-- <div class="container" style="display: flex;">
             <input placeholder="Digite o nome ...." class="search" type="text" name="" id="">
-        </div>
+        </div> -->
     </div>
 
-    <img class="pictures" src="assets/images/rick-and-morty-pictures.jpg" alt="">
-    <!-- <div class="img-pictures"> <img class="pictures" src="assets/images/rick-and-morty-pictures.jpg" alt=""></div> -->
-
+    <div class="list">
+        <div class="row" style="color: aliceblue; display: ruby;">
+            <div class="col-sm-2" *ngFor="let character of allCharacters">
+                <mat-card class="container" style="margin-left: 1rem;margin-right: 1rem; margin-bottom: 2rem;">
+                    <div class="row" style="display: flex; max-width: 35rem; height: 8rem;">
+                        <div class="col-sm-2">
+                            <img style="height: 8rem;" src="{{character?.image}}" alt="">
+                        </div>
+                        <div class="col-sm-2 card">
+                            <h3>{{character?.name}}</h3>
+                            <span>{{ character.species }}</span>
+                            <p>Local: {{ character.location.name }}</p>
+                            <p>Quant. episodios:</p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
 </div>

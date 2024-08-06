@@ -2,6 +2,7 @@
 
 html {
     background: #252525;
+    /* background: linear-gradient(to top, rgba(255, 225, 255, 0) 20%, #252525), center top url("./assets/images/c27b100abb98d413adfb7e2570ffb3e8.jpg"); */
     margin: 0;
     height: 100%;
 }

@@ -1,4 +1,4 @@
-<div class="main ">
+<div class="main">
     <div class="header">
         <img class="img-title header-img" src="assets/images/title-rick.png" alt="" srcset="">
         <h1>
@@ -13,20 +13,16 @@
 
         <form [formGroup]="formGroup">
             <div class="row" style="display: flex; margin-top: 1rem; ">
-                <div class="col-sm-2" style="margin-right: 2rem;">
-                    <mat-form-field>
+                    <mat-form-field style="max-width: 50%; margin-right: 2rem;">
                         <mat-select formControlName="type" placeholder="Selecione">
                             <mat-option value="name">Nome</mat-option>
                             <mat-option value="status">Status</mat-option>
                             <mat-option value="species">Espécie</mat-option>
                         </mat-select>
                     </mat-form-field>
-                </div>
-                <div class="col-sm-2">
-                    <mat-form-field>
+                    <mat-form-field style="max-width: 50%;">
                         <input formControlName="name" placeholder="Digite..." matInput>
                     </mat-form-field>
-                </div>
                 <div class="col-sm-2">
                     <button mat-button (click)="search()">
                         <mat-icon>search</mat-icon>
@@ -62,3 +58,4 @@
         aria-label="Select page" (page)="pageEvent = pageNavigations($event)">
     </mat-paginator>
 </div>
+

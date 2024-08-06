@@ -9,6 +9,8 @@
 
 .header {
     display: flex;
+    justify-content: center;
+    width: 85%;
 }
 
 .title-universe {
@@ -22,7 +24,7 @@
 .title-rick-morty {
     margin: 0;
     font-size: 2.8rem;
-    margin-top: 0.2rem;
+    margin-top: 1rem;
     font-weight: 600;
 }
 
@@ -35,7 +37,7 @@
 }
 
 .col-sm {
-    background: #75F157 !important;
+    background: #75F157;
     width: 8rem;
     text-align: center;
     padding: 0.4rem 0 0.4rem 0;
@@ -85,9 +87,11 @@ input {
     text-align: center;
 }
 
-.pictures {
-    height: 17rem;
-    width: 45%;
+.disabled {
+    background-color: #76f1576c !important;
+}
 
-    float: right;
+a {
+    text-decoration: none;
+    color: #252525;
 }

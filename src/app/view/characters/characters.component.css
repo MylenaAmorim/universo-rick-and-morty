@@ -6,6 +6,10 @@
     margin-top: 0.5rem;
 }
 
+body {
+    /* display: ruby-text !important; */
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -50,9 +54,14 @@ mat-icon {
 }
 
 mat-paginator {
-    background: #75F157 !important;
+    background: #83fc5a !important;
     color: #252525;
     justify-content: center;
+}
+
+form {
+    margin: auto;
+    max-width: 90%;
 }
 
 .card-filter {

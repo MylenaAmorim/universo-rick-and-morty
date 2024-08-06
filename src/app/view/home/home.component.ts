@@ -8,6 +8,14 @@ import { Component } from '@angular/core';
 
 
 export class HomeComponent {
+
+  allCharacters: any;
+  pagination: any;
+  pageEvent: any;
+  
+  filterSelected: any = 0;
+  pageIndex: any = 0;
+  
   constructor() {}
 
   search() {
