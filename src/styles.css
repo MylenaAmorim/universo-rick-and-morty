@@ -1,9 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 html {
-    background: #252525 !important;
+    background: #252525;
     margin: 0;
+    height: 100%;
 }
 
-body {
-    margin: 0 !important;
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+
+.header-img {
+    width: 15% !important;
+    height: 20%;
+}
+

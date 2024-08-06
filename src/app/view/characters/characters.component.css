@@ -1,0 +1,90 @@
+
+.title-filter {
+    color: #C447FF;
+    
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+h1,
+.title-filter {
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    color: #83fc5a;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+mat-card {
+    align-items: center;
+   
+}
+
+.mdc-text-field--no-label {
+    padding-top: 0 !important;
+}
+
+.main {
+  background-size: 100% !important;
+  background-image: url("../../../assets/images/backgroud.jpg");
+}
+
+button {
+    background: #7b1fa2;
+    padding: 0.5rem;
+    margin-left: 1rem;
+        margin-top: 0.6rem !important;
+}
+mat-icon {
+    margin: 0 !important;
+}
+
+mat-paginator {
+    background: #75F157 !important;
+    color: #252525;
+    justify-content: center;
+}
+
+.card-filter {
+    width: 65%;
+    margin: auto;
+    margin-top: 1rem !important;
+
+}
+
+.list {
+    margin-top: 2rem;
+}
+
+.card {
+    max-width: 18rem; 
+    width: 16rem;
+
+    margin-left: 0.2rem;
+}
+
+.card  p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #75f157b5;
+    font-family: "Fredoka", sans-serif;
+}
+
+.card h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.card span {
+    color: #c6c6c6;
+}

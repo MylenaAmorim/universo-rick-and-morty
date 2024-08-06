@@ -1,0 +1,64 @@
+<div class="main ">
+    <div class="header">
+        <img class="img-title header-img" src="assets/images/title-rick.png" alt="" srcset="">
+        <h1>
+            Personagens
+        </h1>
+    </div>
+
+    <mat-card class="card-filter">
+        <label class="title-filter">
+            Filtrar Personagens:
+        </label>
+
+        <form [formGroup]="formGroup">
+            <div class="row" style="display: flex; margin-top: 1rem; ">
+                <div class="col-sm-2" style="margin-right: 2rem;">
+                    <mat-form-field>
+                        <mat-select formControlName="type" placeholder="Selecione">
+                            <mat-option value="name">Nome</mat-option>
+                            <mat-option value="status">Status</mat-option>
+                            <mat-option value="species">Espécie</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-2">
+                    <mat-form-field>
+                        <input formControlName="name" placeholder="Digite..." matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-2">
+                    <button mat-button (click)="search()">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </div>
+          
+            </div>
+        </form>
+    </mat-card>
+
+    <div class="list">
+        <div class="row" style="color: aliceblue; display: ruby;">
+            <div class="col-sm-2" *ngFor="let character of allCharacters">
+                <mat-card class="container" style="margin-left: 1rem;margin-right: 1rem; margin-bottom: 2rem;">
+                    <div class="row" style="display: flex; max-width: 35rem; height: 8rem;">
+                        <div class="col-sm-2">
+                            <img style="height: 8rem;" src="{{character?.image}}" alt="">
+                        </div>
+                        <div class="col-sm-2 card">
+                            <h3>{{character?.name}}</h3>
+                            <span>{{ character.species }}</span>
+                            <p>Local: {{ character.location.name }}</p>
+                            <p>Quant. episodios:</p>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+
+    <mat-paginator 
+        [length]="pagination.count" [pageSize]="pagination.pageSize" [pageIndex]="pageIndex"
+        aria-label="Select page" (page)="pageEvent = pageNavigations($event)">
+    </mat-paginator>
+</div>
